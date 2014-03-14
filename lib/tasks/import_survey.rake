@@ -7,6 +7,6 @@ namespace :import do
   #invoke the :environment taks before this survey_data task.
   # Make models, ...available to the ruby we'll write in this task.
   task hospital_data: :environment do
-    ImportHospital.import
+    ImportHospitalSurvey.import
   end
 end
